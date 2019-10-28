@@ -6,7 +6,11 @@
 //
 
 #import "ViewController.h"
-#import "FirstViewController.h"
+//#import "FirstViewController.h"
+
+#import <CTMediator+First.h>
+#import <CTMediator+Second.h>
+
 
 @interface ViewController ()
 
@@ -18,10 +22,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
+    
+    
+    
+//    CTMediator *ct = [CTMediator sharedInstance];
+//    ct.logsss = @"123";
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    FirstViewController *vc = [[FirstViewController alloc] init];
+     
+    CTMediator *ct = [CTMediator sharedInstance];
+    
+//    UIViewController *vc = [ct First_AViewController];
+    UIViewController *vc = [ct SecondViewController];
     [self presentViewController:vc animated:YES completion:nil];
 }
 

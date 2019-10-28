@@ -19,6 +19,7 @@
 		4A44671B235554D000EF31DF /* CTMediatorPraticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A44671A235554D000EF31DF /* CTMediatorPraticeTests.m */; };
 		4A446726235554D000EF31DF /* CTMediatorPraticeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A446725235554D000EF31DF /* CTMediatorPraticeUITests.m */; };
 		4A4467382355557800EF31DF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4467372355557800EF31DF /* SecondViewController.m */; };
+		4A4468052355A99700EF31DF /* Target_Second.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4468042355A99700EF31DF /* Target_Second.m */; };
 		F0DED39E20479B7DFCB66632 /* Pods_CTMediatorPratice_CTMediatorPraticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBBD145566A4431D34C52A1 /* Pods_CTMediatorPratice_CTMediatorPraticeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		4A446727235554D000EF31DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A4467362355557800EF31DF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		4A4467372355557800EF31DF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4A4468032355A99700EF31DF /* Target_Second.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Second.h; sourceTree = "<group>"; };
+		4A4468042355A99700EF31DF /* Target_Second.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Second.m; sourceTree = "<group>"; };
 		5551C87136DC8CA361EB7E8C /* Pods-CTMediatorPratice-CTMediatorPraticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTMediatorPratice-CTMediatorPraticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-CTMediatorPratice-CTMediatorPraticeUITests/Pods-CTMediatorPratice-CTMediatorPraticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		60557C642C2875F2AD277013 /* Pods-CTMediatorPraticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTMediatorPraticeTests.release.xcconfig"; path = "Target Support Files/Pods-CTMediatorPraticeTests/Pods-CTMediatorPraticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		78EF43531632C6CA01228BC4 /* Pods-CTMediatorPratice-CTMediatorPraticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTMediatorPratice-CTMediatorPraticeUITests.release.xcconfig"; path = "Target Support Files/Pods-CTMediatorPratice-CTMediatorPraticeUITests/Pods-CTMediatorPratice-CTMediatorPraticeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,8 +133,7 @@
 				4A446702235554CF00EF31DF /* SceneDelegate.m */,
 				4A446704235554CF00EF31DF /* ViewController.h */,
 				4A446705235554CF00EF31DF /* ViewController.m */,
-				4A4467362355557800EF31DF /* SecondViewController.h */,
-				4A4467372355557800EF31DF /* SecondViewController.m */,
+				4A4468022355A97200EF31DF /* Second */,
 				4A446707235554CF00EF31DF /* Main.storyboard */,
 				4A44670A235554D000EF31DF /* Assets.xcassets */,
 				4A44670C235554D000EF31DF /* LaunchScreen.storyboard */,
@@ -157,6 +159,17 @@
 				4A446727235554D000EF31DF /* Info.plist */,
 			);
 			path = CTMediatorPraticeUITests;
+			sourceTree = "<group>";
+		};
+		4A4468022355A97200EF31DF /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				4A4467362355557800EF31DF /* SecondViewController.h */,
+				4A4467372355557800EF31DF /* SecondViewController.m */,
+				4A4468032355A99700EF31DF /* Target_Second.h */,
+				4A4468042355A99700EF31DF /* Target_Second.m */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 		A6D5ACD138C82AD54E459E67 /* Frameworks */ = {
@@ -193,7 +206,7 @@
 				4A4466F7235554CF00EF31DF /* Sources */,
 				4A4466F8235554CF00EF31DF /* Frameworks */,
 				4A4466F9235554CF00EF31DF /* Resources */,
-				B24ED62B8642A38EC6285602 /* [CP] Embed Pods Frameworks */,
+				3887242E555E9AB18316FFC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,7 +244,7 @@
 				4A44671D235554D000EF31DF /* Sources */,
 				4A44671E235554D000EF31DF /* Frameworks */,
 				4A44671F235554D000EF31DF /* Resources */,
-				97693C353268B503D2952F2E /* [CP] Embed Pods Frameworks */,
+				3B95D7B105AB370C20EA7D76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,7 +369,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97693C353268B503D2952F2E /* [CP] Embed Pods Frameworks */ = {
+		3887242E555E9AB18316FFC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CTMediatorPratice/Pods-CTMediatorPratice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CTMediatorPratice/Pods-CTMediatorPratice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CTMediatorPratice/Pods-CTMediatorPratice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B95D7B105AB370C20EA7D76 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,23 +425,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B24ED62B8642A38EC6285602 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CTMediatorPratice/Pods-CTMediatorPratice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CTMediatorPratice/Pods-CTMediatorPratice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CTMediatorPratice/Pods-CTMediatorPratice-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -421,6 +434,7 @@
 			files = (
 				4A4467382355557800EF31DF /* SecondViewController.m in Sources */,
 				4A446706235554CF00EF31DF /* ViewController.m in Sources */,
+				4A4468052355A99700EF31DF /* Target_Second.m in Sources */,
 				4A446700235554CF00EF31DF /* AppDelegate.m in Sources */,
 				4A446711235554D000EF31DF /* main.m in Sources */,
 				4A446703235554CF00EF31DF /* SceneDelegate.m in Sources */,
@@ -596,6 +610,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DYL533N39;
 				INFOPLIST_FILE = CTMediatorPratice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,6 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DYL533N39;
 				INFOPLIST_FILE = CTMediatorPratice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
